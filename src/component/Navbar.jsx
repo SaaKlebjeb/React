@@ -20,7 +20,7 @@ const Navbar = () => {
 const location=useLocation();
   return (
     <div className='sticky top-0 z-10'>
-      <nav className='flex justify-between md:justify-evenly items-center h-auto bg-lime-50 p-2 ' >
+      <nav className='flex relative justify-between md:justify-evenly items-center h-auto bg-lime-50 p-2 ' >
         <div className="logo relative mr-10 rounded-full w-14 bg-blue-300  h-14 flex justify-center items-center">
             <img  className=' duration-1000 w-full h-full rounded-full object-cover' src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/122305813/original/a091d109740ab886828d56f5959dcc0eae571176/professional-shopping-logo-design.jpg" alt="" />
             <span className='absolute text-xl top-3 left-[60px]   font-semibold'>Shopify</span>
@@ -54,11 +54,12 @@ const location=useLocation();
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
            </svg>
         </div>
+        <LoginForm show={showLog} setShowForm={setShowLog}/>
       </nav>
       <Bag open={showbag} setOpen={setShowbag}/>
       <MyDrawer open={openbar} setOpen={setOpenbar}/>
       {/* <Modalforshopview IsShow={show} IssetShow={setShow} Fullscreen={fullscreen}/> */}
-      <LoginForm show={showLog} setShowForm={setShowLog}/>
+     
     </div>
   )
 }
