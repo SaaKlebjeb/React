@@ -8,16 +8,20 @@ import Kid from './Kid'
 import Footer from './Footer'
 const Mainweb = () => {
   return (   
-     <BrowserRouter>
+    <div className='relative overflow-visible'>
+       <BrowserRouter >
         <Navbar/>
-        <Routes>
+       <div className="content">
+       <Routes>
           <Route path='/' element={<Product/>}/>
           <Route path='/men' element={<Men/>}/>
           <Route path='/women' element={<Women/>}/>
           <Route path='/kid' element={<Kid/>}/>
         </Routes>
+       </div>
         <Footer/>
      </BrowserRouter>
+    </div>
   )
 }
 
