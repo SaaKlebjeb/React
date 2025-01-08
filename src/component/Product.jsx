@@ -5,6 +5,7 @@ import {Kidcollection} from "../../public/js/Kidcollection";
 import AOS from "aos";
 import { Topselling } from "../../public/js/Topselling";
 import ProductView from "./subcomponent/ProductView";
+import { Link } from "react-router-dom";
 
 const Product = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -26,9 +27,11 @@ const Product = () => {
             <span> Collection</span>
             <span className="">For Everyone</span>
           </h1>
-          <button className="btn-seepro sm:w-[250px] w-[200px] h-12 rounded-full  text-white text-lg font-sans hover:scale-95 ">
+         <Link to="/all-product">
+          <button  className="btn-seepro sm:w-[250px] w-[200px] h-12 rounded-full  text-white text-lg font-sans hover:scale-95 ">
             See All Products
           </button>
+         </Link>
         </div>
         <div className="div-img w-[30%] h-[75%] ">
           <img

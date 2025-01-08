@@ -6,6 +6,7 @@ import Product from './Product'
 import Women from './Women'
 import Kid from './Kid'
 import Footer from './Footer'
+import Allproduct from './Allproduct'
 const Mainweb = () => {
   return (   
     <div className='relative overflow-visible'>
@@ -17,6 +18,7 @@ const Mainweb = () => {
           <Route path='/men' element={<Men/>}/>
           <Route path='/women' element={<Women/>}/>
           <Route path='/kid' element={<Kid/>}/>
+          <Route path='/all-product' element={<Allproduct/>}/>
         </Routes>
        </div>
         <Footer/>
