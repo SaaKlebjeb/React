@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faInstagram,faYoutube,faTiktok } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
-    <div className="w-full gap-6 grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white items-center sm:h-[500px] lg:h-[400px] h-[980px] bg-black mt-5">
+    <div className=" w-full gap-6 grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-white items-center sm:h-[500px] lg:h-[400px] h-[980px] bg-black mt-5">
       <div className="min-w-[22%] p-3  flex flex-col text-center items-center  h-auto">
         <h1 className="font-bold text-2xl">FOLLOW US</h1>
         <ul className="mt-4">

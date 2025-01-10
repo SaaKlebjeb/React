@@ -18,9 +18,9 @@ const Product = () => {
     AOS.init();
   },[])
   return (
-    <div>
-      <div className="intro-product  flex justify-evenly flex-col md:flex-row items-center mx-auto w-[85%] md:h-[500px] h-[800px] mt-5 rounded-lg ">
-        <div className="textPro w-[90%] md:w-[50%] lg:w-[35%] h-[80%] mt-[50px] flex  justify-evenly flex-col items-center p-2 ">
+    <div className=" w-[90%] mt-20 flex justify-center items-center flex-col xsm:pl-20 md:pl-0 ">
+      <div className="intro-product w-full  flex justify-evenly flex-col md:flex-row items-center mx-auto md:h-[500px] h-[800px] mt-5 rounded-lg  ">
+        <div className="textPro  w-[75%] md:w-[50%] lg:w-[35%] h-[80%] mt-[50px] flex  justify-evenly flex-col items-center p-2 ">
           <h1 className="text-intro flex flex-col">
             <span className="text-2xl">new arrival only</span>
             <span>New 👋</span>
@@ -33,7 +33,7 @@ const Product = () => {
           </button>
          </Link>
         </div>
-        <div className="div-img w-[30%] h-[75%] ">
+        <div className="div-img  w-[30%] h-[75%] ">
           <img
             alt="Oversized Cropped T-Shirts"
             src="/Image01/girlzando3.png"
@@ -42,7 +42,7 @@ const Product = () => {
         </div>
       </div>
       {/* Top selling */}
-      <div className="w-[85%] flex flex-col justify-between h-400px mt-[50px] mx-auto ">
+      <div className="w-[100%] flex flex-col justify-between h-400px mt-[50px] mx-auto ">
         <div>
           <h1 className="relative uppercase w-[40%] md:w-[25%]  mx-auto text-2xl font-bold text-center py-3">
             top selling
@@ -74,7 +74,7 @@ const Product = () => {
         </div>
       </div>
       {/* Women Collection */}
-      <div className="w-[85%] flex flex-col justify-between h-400px mt-[50px] mx-auto ">
+      <div className="w-[100%] flex flex-col justify-between h-400px mt-[50px] mx-auto ">
         <div>
           <h1 className="relative uppercase w-[40%] md:w-[25%]  mx-auto text-2xl font-bold text-center py-3">
             women collection
@@ -106,7 +106,7 @@ const Product = () => {
         </div>
       </div>
       {/* Men Collection */}
-      <div className="w-[85%] flex flex-col justify-between h-400px mt-[50px] mx-auto">
+      <div className="w-[100%] flex flex-col justify-between h-400px mt-[50px] mx-auto">
        <div>
           <h1 className="relative uppercase w-[40%] md:w-[25%]  mx-auto text-2xl font-bold text-center py-3">
             men collection
@@ -138,7 +138,7 @@ const Product = () => {
         </div>
       </div>
       {/* Kid collection */}
-      <div className="w-[85%] flex flex-col justify-between h-400px mt-[50px] mx-auto">
+      <div className="w-[100%] flex flex-col justify-between h-400px mt-[50px] mx-auto">
        <div>
           <h1 className="relative uppercase w-[40%] md:w-[25%]  mx-auto text-2xl font-bold text-center py-3">
             kid collection

@@ -9,10 +9,10 @@ import Footer from './Footer'
 import Allproduct from './Allproduct'
 const Mainweb = () => {
   return (   
-    <div className='relative overflow-visible'>
+    <div className=' overflow-visible flex justify-center items-center flex-col'>
        <BrowserRouter >
         <Navbar/>
-       <div className="content">
+       <div className="content w-[100%] flex justify-center items-center flex-col ">
        <Routes>
           <Route path='/' element={<Product/>}/>
           <Route path='/men' element={<Men/>}/>

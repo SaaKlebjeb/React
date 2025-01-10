@@ -4,6 +4,9 @@
 //   top: 0;
 //   z-index: 10;
 //}
+.super_nav{
+  width: 100% !important;
+}
 .content{
   min-width: 100vh;
 }
@@ -30,6 +33,7 @@
 //intro-product
 .intro-product{
     background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+    min-width: 0;
 }
 //text-intro
 .text-intro{

@@ -14,21 +14,21 @@ const Kid = () => {
       AOS.init();
     },[])
   return (
-    <div>
-      <div className='w-[100%] md:w-[90%]  h-[400px] mx-auto mt-10 shadow-2xl '>
-        <img className=' object-cover w-full h-full rounded-xl' src="https://www.sports52wear.com/cdn/shop/files/Brown_And_White_Urban_Fashion_Style_Banner_3.jpg?v=1700467200&width=3840" alt="" />
+    <div className='w-full mx-auto '>
+      <div className='w-[90%] mx-auto mt-[90px] '>
+        <img className=' object-cover w-full h-auto rounded-xl' src="https://www.sports52wear.com/cdn/shop/files/Brown_And_White_Urban_Fashion_Style_Banner_3.jpg?v=1700467200&width=3840" alt="" />
       </div>
-        <div className='w-[100%] scrollbar-y p-2 gap-x-8 gap-y-5  mx-auto  flex flex-wrap justify-center items-center mt-[70px] h-auto overflow-y-auto '>
+        <div className='w-[90%] scrollbar-y  mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mt-[70px] p-32 sm:p-0'>
             {
               Onlykid.map((item,index)=>(
-                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1200" className="relative  group card w-auto shadow-lg rounded-md flex-shrink-0 ">
+                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1200" className="relative group card bg-white w-full shadow-lg rounded-lg overflow-hidden flex flex-col">
                   <button onClick={()=>handleQuickView(item)} className="absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
                 <img                                                                               
-                    className=" w-[220px] sm:w-[250px] object-cover md:h-[350px] h-[350px]"
+                    className="w-full object-cover  h-[400px]"
                     src={item.image}
                     alt={item.title}
                   />
-                  <div className="card-body w-full p-3">
+                  <div className="card-body w-full p-3 text-center flex flex-col justify-between">
                     <div className="card-title">
                       <h3>{item.title}</h3>
                     </div>
