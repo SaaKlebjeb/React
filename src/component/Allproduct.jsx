@@ -14,20 +14,20 @@ const Allproduct = () => {
         AOS.init();
       },[])
   return (
-    <div>
+    <div className='px-16 '>
          <div className='mt-[100px]'>
           <h1 className="relative uppercase w-[40%] md:w-[25%]  mx-auto text-2xl font-bold text-center py-3">
             all products
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></span>
            </h1>
         </div>
-       <div className='w-[100%] scrollbar-y2 p-2 gap-x-8 gap-y-5  mx-auto  flex flex-wrap justify-center items-center mt-[70px] h-auto overflow-y-auto '>
+       <div className='w-[60%] xsm:w-[100%] scrollbar-y2 scrollbar-y  mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5  gap-6 mt-[100px] px-32 sm:p-0 '>
             {
               AllProduct.map((item,index)=>(
-                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1200" className="relative  group card w-auto shadow-lg rounded-md flex-shrink-0 ">
+                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1000" className="relative  group card w-auto shadow-lg rounded-md flex-shrink-0 ">
                   <button onClick={()=>handleQuickView(item)} className="absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
                 <img                                                                               
-                    className=" w-[220px] sm:w-[250px] object-cover md:h-[350px] h-[350px]"
+                    className="w-full object-cover h-[450px]"
                     src={item.image}
                     alt={item.title}
                   />

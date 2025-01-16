@@ -16,15 +16,15 @@ const Kid = () => {
   return (
     <div className='w-full mx-auto '>
       <div className='w-[90%] mx-auto mt-[90px] '>
-        <img className=' object-cover w-full h-auto rounded-xl' src="https://www.sports52wear.com/cdn/shop/files/Brown_And_White_Urban_Fashion_Style_Banner_3.jpg?v=1700467200&width=3840" alt="" />
+        <img className=' object-cover w-full h-full rounded-xl' src="https://www.sports52wear.com/cdn/shop/files/Brown_And_White_Urban_Fashion_Style_Banner_3.jpg?v=1700467200&width=3840" alt="" />
       </div>
         <div className='w-[90%] scrollbar-y  mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6 mt-[70px] p-32 sm:p-0'>
             {
               Onlykid.map((item,index)=>(
-                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1200" className="relative group card bg-white w-full shadow-lg rounded-lg overflow-hidden flex flex-col">
+                <div key={index} data-aos="zoom-out-down"  data-aos-duration="1000" className="relative group card bg-white w-full shadow-lg rounded-lg overflow-hidden flex flex-col">
                   <button onClick={()=>handleQuickView(item)} className="absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
                 <img                                                                               
-                    className="w-full object-cover  h-[400px]"
+                    className="w-full object-cover h-[450px]"
                     src={item.image}
                     alt={item.title}
                   />

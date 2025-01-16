@@ -18,7 +18,7 @@ const Product = () => {
     AOS.init();
   },[])
   return (
-    <div className=" w-[90%] mt-20 flex justify-center items-center flex-col xsm:pl-20 md:pl-0 ">
+    <div className=" w-[90%] mt-20 flex justify-center items-center flex-col ">
       <div className="intro-product w-full  flex justify-evenly flex-col md:flex-row items-center mx-auto md:h-[500px] h-[800px] mt-5 rounded-lg  ">
         <div className="textPro  w-[75%] md:w-[50%] lg:w-[35%] h-[80%] mt-[50px] flex  justify-evenly flex-col items-center p-2 ">
           <h1 className="text-intro flex flex-col">
@@ -49,14 +49,14 @@ const Product = () => {
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></span>
            </h1>
         </div>
-       <div className="w-full flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 p-2 ">
+       <div className="w-[60%] xsm:w-[100%]  mx-auto flex scroll-custom scroll-smooth gap-4 overflow-x-scroll  mt-7  pl-4">
           {/*map the card  */}
           {Topselling.map((item, index) => (
             <div key={index} data-aos="fade-up"
-            data-aos-duration="700" className="relative group card w-[200px] shadow-2xl rounded-md flex-shrink-0">
+            data-aos-duration="700" className="relative group card w-[200px]  shadow-2xl rounded-md flex-shrink-0">
               <button onClick={()=>handleQuickView(item)} className="absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
             <img                                                                               
-                className=" w-full object-cover h-[300px]"
+                className=" w-full object-cover h-auto"
                 src={item.image}
                 alt={item.title}
               />
@@ -81,7 +81,7 @@ const Product = () => {
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></span>
            </h1>
         </div>
-       <div className="w-full flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 p-2 ">
+       <div className="w-[60%] xsm:w-[100%] mx-auto flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 pl-14 ">
           {/*map the card  */}
           {Womencollection.map((item, index) => (
             <div key={index} data-aos="fade-up"
@@ -113,7 +113,7 @@ const Product = () => {
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></span>
           </h1>
         </div>
-        <div className="w-full flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 p-2 ">
+        <div className="w-[60%] xsm:w-[100%] mx-auto flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 pl-14 ">
           {/*map the card  */}
           {Mencollection.map((item, index) => (
             <div key={index} data-aos="fade-up"
@@ -145,7 +145,7 @@ const Product = () => {
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-black"></span>
           </h1>
         </div>
-        <div className="w-full flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7 p-2 ">
+        <div className="w-[60%] xsm:w-[100%] mx-auto flex scroll-custom scroll-smooth gap-7 overflow-x-scroll  mt-7  pl-14 ">
           {/*map the card  */}
           {Kidcollection.map((item, index) => (
             <div key={index} data-aos="fade-up"
@@ -168,10 +168,11 @@ const Product = () => {
             </div>
           ))}
         </div>
-      </div>
-      {selectedProduct && (
+        {selectedProduct && (
         <ProductView open={isModalOpen} setOpen={setIsModalOpen} product={selectedProduct}  />
       )}
+      </div>
+     
     </div>
   );
 };

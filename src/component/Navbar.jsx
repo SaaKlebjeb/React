@@ -19,7 +19,7 @@ const Navbar = () => {
   }
 const location=useLocation();
   return (
-    <div className='super_nav min-w-full fixed top-[-2px] z-10 '>
+    <div className='super_nav min-w-full fixed top-[-3px] z-10 '>
       <nav className='flex justify-between md:justify-evenly items-center bg-lime-50 p-2 h-16 shadow-md' >
         <div className="logo relative mr-10 rounded-full w-14 bg-blue-300  h-14 flex justify-center items-center">
             <img  className=' duration-1000 w-full h-full rounded-full object-cover' src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/122305813/original/a091d109740ab886828d56f5959dcc0eae571176/professional-shopping-logo-design.jpg" alt="" />
@@ -86,8 +86,8 @@ const location=useLocation();
             />
           </svg>
         </div>
-        <LoginForm show={showLog} setShowForm={setShowLog}/>
       </nav>
+      <LoginForm show={showLog} setShowForm={setShowLog}/>
       <Bag open={showbag} setOpen={setShowbag}/>
       <MyDrawer open={openbar} setOpen={setOpenbar}/>
       {/* <Modalforshopview IsShow={show} IssetShow={setShow} Fullscreen={fullscreen}/> */}
