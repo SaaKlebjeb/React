@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from './Navbar'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
 import Men from './Men'
@@ -15,10 +15,10 @@ const Mainweb = () => {
        <div className="content w-[100%] flex justify-center items-center flex-col ">
        <Routes>
           <Route path='/' element={<Product/>}/>
-          <Route path='/men' element={<Men/>}/>
-          <Route path='/women' element={<Women/>}/>
-          <Route path='/kid' element={<Kid/>}/>
-          <Route path='/all-product' element={<Allproduct/>}/>
+          <Route path='men' element={<Men/>}/>
+          <Route path='women' element={<Women/>}/>
+          <Route path='kid' element={<Kid/>}/>
+          <Route path='all-product' element={<Allproduct/>}/>
         </Routes>
        </div>
         <Footer/>

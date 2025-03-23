@@ -1,11 +1,11 @@
-import React, { useEffect,useState } from "react";
+import  { useEffect,useState } from "react";
 import {Womencollection} from "../../public/js/Womencollection";
 import {Mencollection} from "../../public/js/Mencollection";
 import {Kidcollection} from "../../public/js/Kidcollection";
 import AOS from "aos";
 import { Topselling } from "../../public/js/Topselling";
 import ProductView from "./subcomponent/ProductView";
-import { Link } from "react-router-dom";
+import { Link,Outlet  } from "react-router-dom";
 
 const Product = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,18 +27,18 @@ const Product = () => {
             <span> Collection</span>
             <span className="">For Everyone</span>
           </h1>
-         <Link to="/all-product">
+         <Link to="all-product">
           <button  className="btn-seepro sm:w-[250px] w-[200px] h-12 rounded-full  text-white text-lg font-sans hover:scale-95 ">
             See All Products
           </button>
          </Link>
+         
         </div>
         <div className="div-img  w-[30%] h-[75%] ">
           <img
             alt="Oversized Cropped T-Shirts"
             src="/Image01/girlzando3.png"
-            class="div-img animate-pulse-slow w-full h-full object-cover"
-          />
+            className="div-img animate-pulse-slow w-full h-full object-cover"/>
         </div>
       </div>
       {/* Top selling */}

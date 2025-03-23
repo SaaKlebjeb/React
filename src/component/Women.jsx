@@ -1,4 +1,4 @@
-import React ,{useState,useEffect}from 'react'
+import {useState,useEffect}from 'react'
 import AOS from 'aos'
 import { Onlywomen } from '../../public/js/Onlywomen'
 import ProductView from './subcomponent/ProductView'
@@ -22,7 +22,7 @@ const Women = () => {
             {
               Onlywomen.map((item,index)=>(
                 <div key={index}  data-aos="zoom-out-down"  data-aos-duration="1000"  className="relative  group card w-auto shadow-lg rounded-md flex-shrink-0 ">
-                  <button onClick={()=>handleQuickView(item)} className="absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
+                  <button onClick={()=>handleQuickView(item)} className=" absolute bottom-[40%] left-[10px] min-w-[90%] h-12 bg-gray-300 hidden blur-light rounded-lg group-hover:flex justify-center items-center opacity-80 text-md ">Quick View</button> 
                 <img                                                                               
                     className="w-full object-cover sm:h-auto"
                     src={item.image}

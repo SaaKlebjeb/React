@@ -1,5 +1,5 @@
 
-import React,{useEffect,useState} from 'react'
+import {useEffect,useState} from 'react'
 import AOS from 'aos'
 import { Onlymen } from '../../public/js/Onlymen'
 import ProductView from './subcomponent/ProductView';
